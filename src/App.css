@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+h1 {
+  font-size: 3rem;
+  line-height: 125%;
+  color: #2D2D2D;
+  margin: 0 0 0.75rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p { 
+  margin: 0.75rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #2557A7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+label {
+  color:#2D2D2D;
+  font-weight: bold;
+  user-select: none;
+}
+
+input, select {
+  display: block;
+  box-sizing: border-box; 
+  width: 100%;
+  margin: 0.25rem 0 0.75rem;
+  border: solid 1px #767676;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 1rem;
+}
+
+select {
+  color: #767676;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("../public/ChevronDown.svg");
+  background-repeat: no-repeat;
+  background-position-x: 691px;
+  background-position-y: 0.625rem;
+}
+
+
+button {
+  margin-top: 0.75rem;
+  padding: 0.625rem 1rem;
+  background-color: #2557A7;
+  border-radius: 8px;
   color: white;
+  display: flex;
+  align-items: center;
+  float: right;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  font-family: "Indeed Sans","Indeed Sans","Noto Sans","Helvetica Neue","Helvetica","Arial","Liberation Sans","Roboto","Noto",sans-serif;
+  line-height: 150%;
+  color: #595959;
+  width: 1168px;
+  display: flex;
+  gap: 48px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.helper-label {
+  display: block;
+  color:#595959;
+  font-size: 0.875rem;
+  font-weight:400;
+}
+
+.required::after {
+  content: ' *';
+  color: #A9252B
+}
+
+.right-arrow {
+  margin-left: 0.5rem;
+}
+
+#left-column {
+  width: 731px;
+}
+
+#right-column {
+  width: 390px;
+}
+
+#disclaimer {
+  color: #2D2D2D;
+  width: 100%;
+  display: flex;
+}
+
+#disclaimer input {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+#disclaimer label {
+  font-weight: 400;
 }
